@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Sur Le Vaccin Du Covid</title>
+    <link rel="stylesheet" href="vaccin.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Sur Le Vaccin Du Covid</h1>
+        <form id="quiz-form">
+            <div class="question" id="q9">
+                <p>9. Les tests PCR pour la COVID-19 sont-ils inefficaces ou peu fiables ? </p>
+                <label>
+                    <input type="radio" name="q9" value="true"> Vrai
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="false"> Faux
+                </label>
+                <div class="button-container">
+                    <button type="button" onclick="submitQuestion('q9', 'false');document.getElementById('nextButton').style.display='block'">Soumettre</button>
+                    <button type="button" id="nextButton" onclick="showNextQuestion(9)" style="display: none;">Suivant</button>
+                </div>
+                <div class="result"></div>
+                <div id="resultat"></div>
+            </div>
+        </form>
+    </div>
+    <script src="vaccin.js"></script>
+</body>
+</html>

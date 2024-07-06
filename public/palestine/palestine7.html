@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Sur La Situation En Palestine</title>
+    <link rel="stylesheet" href="palestine.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Sur La Situation En Palestine</h1>
+        <form id="quiz-form">
+            <div class="question" id="q7">
+                <p>7. Le peuple sioniste fait vivre des injustices sans précédent au peuple palestinien, est-ce vrai de dire que c’est un écho de l’histoire des juifs face aux nazis ? </p>
+                <label>
+                    <input type="radio" name="q7" value="true"> Oui
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="false"> Non
+                </label>
+                <div class="button-container">
+                    <button type="button" onclick="submitQuestion('q7', 'true');document.getElementById('nextButton').style.display='block'">Soumettre</button>
+                    <button type="button" id="nextButton" onclick="showNextQuestion(7)" style="display: none;">Suivant</button>
+                </div>
+                <div class="result"></div>
+                <div id="resultat"></div>
+            </div>
+        </form>
+    </div>
+    <script src="palestine.js"></script>
+</body>
+
+</html>

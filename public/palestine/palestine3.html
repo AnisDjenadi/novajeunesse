@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Sur La Situation En Palestine</title>
+    <link rel="stylesheet" href="palestine.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Sur La Situation En Palestine</h1>
+        <form id="quiz-form">
+            <div class="question" id="q3">
+                <p>3. Comment la Palestine a-t-elle évoluer, depuis 1946 ?</p>
+                <label>
+                    <input type="radio" name="q3" value="false"> elle n’as pas changer
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="false"> elle est devenue plus grande
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="true"> elle est devenue plus petite
+                </label>
+                <div class="button-container">
+                    <button type="button" onclick="submitQuestion('q3', 'true');document.getElementById('nextButton').style.display='block'">Soumettre</button>
+                    <button type="button" id="nextButton" onclick="showNextQuestion(3);"style="display: none;">Suivant</button>
+                </div>
+                <div class="result"></div>
+                <div id="resultat"></div>
+            </div>
+        </form>
+    </div>
+    <script src="palestine.js"></script>
+</body>
+
+</html>

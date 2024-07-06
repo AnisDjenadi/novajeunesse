@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Sur Le Vaccin Du Covid</title>
+    <link rel="stylesheet" href="vaccin.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Sur Le Vaccin Du Covid</h1>
+        <form id="quiz-form">
+            <div class="question" id="q1">
+                <p>1. Connaissez-vous la véritable fonction d’un vaccin ?</p>
+                <label>
+                    <input type="radio" name="q1" value="true"> Oui
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="false"> Non
+                </label>
+                <div class="button-container">
+                    <button type="button" onclick="submitQuestion('q1', 'true');document.getElementById('nextButton').style.display='block'">Soumettre</button>
+                    <button type="button" id="nextButton" onclick="showNextQuestion(1)" style="display: none;">Suivant</button>
+                </div>
+                <div class="result"></div>
+                <div id="resultat"></div>
+            </div>
+        </form>
+    </div>
+    <script src="vaccin.js"></script>
+</body>
+
+</html>
